@@ -48,5 +48,5 @@ func bgTimer(seconds int, correct *int) {
 
 	<-timer.C
 	fmt.Printf("You got %v correct answers before time ended!\n", *correct)
-	os.Exit(1)
+	os.Exit(0)
 }
