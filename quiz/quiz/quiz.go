@@ -1,8 +1,9 @@
-package main
+package quiz
 
 import (
 	"flag"
 	"fmt"
+
 	"log"
 	"os"
 	"time"
@@ -13,7 +14,8 @@ type Problem struct {
 	Answer   string
 }
 
-func main() {
+func createQuiz() {
+
 	// get filename
 	var fileName = flag.String("file", "problems.csv", "quiz file name.")
 	var seconds = flag.Int("time", 30, "Amount of time to take the quiz.")
